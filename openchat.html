@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>12:00</span>
+        </div>
+        <div class="status-bar__column">
+            <img src="icons/cellular.svg" alt="Cellular Icon">
+            <img src="icons/wifi.svg" alt="WiFi Icon">
+            <img src="icons/battery.svg" alt="Battery Icon">
+        </div>
+    </div>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <img src="icons/ic24-friends-default.svg">
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chat.html">
+                    <span class="badge nav__badge">5</span>
+                    <img src="icons/ic24-chat-default.svg">
+                </a>
+            </li>
+             <li class="nav__btn">
+                <a class="nav__link" href="openchat.html">
+                    <span class="badge nav__badge">299</span>
+                    <img src="icons/ic24-openchat-pressed.svg">
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="shopping.html">
+                    <img src="icons/ic24-shopping-default.svg">
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <img src="icons/ic24-more-default.svg">
+                </a>
+            </li>
+        </ul>
+    </nav>
+ 
+    <header class="screen-header">
+        <div class="screen-header__1row">
+            <div class="screen-header__1row__left">
+                <h1 class="screen-header__1row__left-title">
+                    지금
+                </h1>
+            </div>
+            <div class="screen-header__1row__right">
+                <span><img src="icons/ic24-search.svg"></span>
+                <span><img src="icons/ic24-addopenchat.svg"></span>
+                <span><img src="icons/ic24-settings.svg"></span>
+            </div>
+        </div>
+        <div class="screen-header__2row">
+            <button class="chip-component">숏폼</button>
+            <button class="chip-component chip-component--active">오픈채팅<span class="badge">299</span></button>
+        </div>
+    </header>
+
+
+    <main class="main-screen">
+        <div class="main-screen__list">
+            <a class="user-component" href="chatting-room.html">
+                <div class="user-component__column">
+                    <img src="https://i.pinimg.com/1200x/4c/0b/55/4c0b55c1fed19eb68aca0ce7d03bce66.jpg"
+                    class="user-component__avatar--md">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">유럽여행 정보 공유방</h4>
+                        <h6 class="user-component__subtitle"> 첫 유럽으로 영국 런던, 프랑스 파리, 스위스, 이탈리아로 이어진 4개의 나라로 다녀왔어요. 이 코스는 유럽 내에서도 가장 유명한 그랜드 투어 코스로 가장 유럽 여행 기본 루트입니다.</h6>
+                    </div>
+                </div>
+                <div class="user-component__column--horizontal">
+                    <span class="user-component__time">오전 12:19</span>
+                    <div class="badge">234</div>
+                    <!-- <img src="icons/ic16-chevron-right.svg"> !-->
+                </div>
+            </a>
+            <a class="user-component" href="chatting-room.html">
+                <div class="user-component__column">
+                    <img src="https://i.pinimg.com/736x/2d/05/b9/2d05b9559657fd93c28ef4036dba14f7.jpg"
+                    class="user-component__avatar--md">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">주식 종토방</h4>
+                        <h6 class="user-component__subtitle"> 영차 영차 </h6>
+                    </div>
+                </div>
+                <div class="user-component__column--horizontal">
+                    <span class="user-component__time">오전 12:18</span>
+                    <div class="badge">65</div>
+                    <!-- <img src="icons/ic16-chevron-right.svg"> !-->
+                </div>
+            </a>
+
+        </div>
+
+
+    </main>
+    <script>
+        const chips = document.querySelectorAll(".chip-component");
+        chips.forEach((chip) => {
+            chip.addEventListener("click", () => {
+                const activeChip = document.querySelector(".chip-component--active");
+                if (activeChip) {
+                    activeChip.classList.remove("chip-component--active");
+                }
+            chip.classList.add("chip-component--active");
+            });
+        });
+    </script>
+</body>
+</html>

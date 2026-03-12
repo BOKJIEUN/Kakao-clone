@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>12:00</span>
+        </div>
+        <div class="status-bar__column">
+            <img src="icons/cellular.svg" alt="Cellular Icon">
+            <img src="icons/wifi.svg" alt="WiFi Icon">
+            <img src="icons/battery.svg" alt="Battery Icon">
+        </div>
+    </div>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <img src="icons/ic24-friends-default.svg">
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chat.html">
+                    <span class="badge nav__badge">5</span>
+                    <img src="icons/ic24-chat-default.svg">
+                </a>
+            </li>
+             <li class="nav__btn">
+                <a class="nav__link" href="openchat.html">
+                    <span class="badge nav__badge">299</span>
+                    <img src="icons/ic24-openchat-default.svg">
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="shopping.html">
+                    <img src="icons/ic24-shopping-default.svg">
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <img src="icons/ic24-more-pressed.svg">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="screen-header">
+        <div class="screen-header__1row">
+            <div class="screen-header__1row__left">
+                <h1 class="screen-header__1row__left-title">
+                    더보기
+                </h1>
+            </div>
+            <div class="screen-header__1row__right">
+                <span><img src="icons/ic24-search.svg"></span>
+                <span><img src="icons/ic24-scan.svg"></span>
+                <span><img src="icons/ic24-settings.svg"></span>
+            </div>
+        </div>
+
+          <div class="screen-header__2row">
+            <button class="chip-component chip-component--active">홈</button>
+            <button class="chip-component">지갑</button>
+        </div>
+
+    </header>
+
+    <main class="main-screen more-screen">
+        
+    <div class="pay__container">
+        <div class="pay__container__left">
+            <span><img src="icons/ic16-pay-logo.svg"></span>
+            <span>0원</span>
+        </div>
+        <div class="pay__container__right">
+            <span>송금</span>
+            <span>자산</span>
+            <div class="pay__container__right-payment">
+                <span><img src="icons/ic16-qrpay.svg"></span>
+                <span>결제</span>
+            </div>
+        </div>
+    </div>
+
+     <div class="more-menu">
+        <ul class="more-menu__list">
+            <div class="more-menu__list-row">
+                <li class="more-menu__btn">
+                    <img src="icons/ic28-more-gift.svg">
+                    <span>선물하기</span>
+                </li>
+                <li class="more-menu__btn">
+                    <img src="icons/ic28-more-mygift.svg">
+                    <span>받은선물</span>
+                </li>
+                <li class="more-menu__btn">
+                    <img src="icons/ic28-more-talkdeal.svg">
+                    <span>톡딜</span>
+                </li>
+                <li class="more-menu__btn">
+                    <img src="icons/ic28-more-emoticon.svg">
+                    <span>이모티콘</span>
+                </li>
+            </div>
+
+            <div class="more-menu__list-row">
+                <li class="more-menu__btn">
+                    <img src="icons/ic28-more-live.svg">
+                    <span>라이브쇼핑</span>
+                </li>
+                <li class="more-menu__btn">
+                    <img src="icons/ic28-more-makers.svg">
+                    <span>메이커스</span>
+                </li>
+                <li class="more-menu__btn">
+                    <img src="icons/ic28-more-friends.svg">
+                    <span>프렌즈</span>
+                </li>
+                <li class="more-menu__btn">
+                    <img src="icons/ic28-more-game.svg">
+                    <span>게임</span>
+                </li>
+            </div>
+
+                <div class="more-menu__list-row">
+                <li class="more-menu__btn">
+                    <img src="icons/ic28-more-id.svg">
+                    <span>모바일신분증</span>
+                </li>
+                <li class="more-menu__btn">
+                    <img src="icons/ic28-more-cloud.svg">
+                    <span>톡클라우드</span>
+                </li>
+                <li class="more-menu__btn">
+                    <img src="icons/ic28-more-calendar.svg">
+                    <span>캘린더</span>
+                </li>
+                <li class="more-menu__btn">
+                    <img src="icons/ic28-more-reservation.svg">
+                    <span>예약하기</span>
+                </li>
+            </div>
+
+        </ul>
+     </div>
+
+    <div class="more-da">
+        <img src="https://framerusercontent.com/assets/RHcYcjgfjcnhwr0ao1D78FbUbg.png">
+    </div>
+
+     <div class="more-da">
+        <img src="https://i.pinimg.com/736x/49/8e/40/498e40c8b4927910b02b0256fbd931b4.jpg">
+    </div>
+
+    </main>
+    <script>
+        const chips = document.querySelectorAll(".chip-component");
+        chips.forEach((chip) => {
+            chip.addEventListener("click", () => {
+                const activeChip = document.querySelector(".chip-component--active");
+                if (activeChip) {
+                    activeChip.classList.remove("chip-component--active");
+                }
+            chip.classList.add("chip-component--active");
+            });
+        });
+    </script>
+</body>
+</html>

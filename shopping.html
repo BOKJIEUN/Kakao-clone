@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body id="shopping-screen">
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>12:00</span>
+        </div>
+        <div class="status-bar__column">
+            <img src="icons/cellular.svg" alt="Cellular Icon">
+            <img src="icons/wifi.svg" alt="WiFi Icon">
+            <img src="icons/battery.svg" alt="Battery Icon">
+        </div>
+    </div>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <img src="icons/ic24-friends-default.svg">
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chat.html">
+                    <span class="badge nav__badge">5</span>
+                    <img src="icons/ic24-chat-default.svg">
+                </a>
+            </li>
+             <li class="nav__btn">
+                <a class="nav__link" href="openchat.html">
+                    <span class="badge nav__badge">299</span>
+                    <img src="icons/ic24-openchat-default.svg">
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="shopping.html">
+                    <img src="icons/ic24-shopping-pressed.svg">
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <img src="icons/ic24-more-default.svg">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="screen-header">
+        <div class="screen-header__1row">
+            <div class="screen-header__1row__left">
+                <h1 class="screen-header__1row__left-title">
+                    쇼핑
+                </h1>
+            </div>
+            <div class="screen-header__1row__right">
+                <span><img src="icons/ic24-search.svg"></span>
+                <span><img src="icons/ic24-myshopping.svg"></span>
+                <span><img src="icons/ic24-settings.svg"></span>
+            </div>
+        </div>
+
+        <div class="screen-header__2row">
+            <button class="chip-component chip-component--active">홈</button>
+            <button class="chip-component">랭킹</button>
+            <button class="chip-component">쟁쟁한특가</button>
+            <button class="chip-component">시즌기획전</button>
+        </div>
+    </header>
+
+    <main class="main-screen">
+        <div class="main-screen__carousel">
+            <div class="main-screen__carousel__box">
+                <img src="icons/spring-lg.png">
+            </div>
+            <div class="main-screen__carousel__box">
+                <img src="https://i.pinimg.com/736x/e0/c4/f5/e0c4f5f0af7e6c8a553f3831b308e14c.jpg">
+            </div>
+            <div class="main-screen__carousel__box">
+                <img src="https://i.pinimg.com/1200x/8f/fc/9c/8ffc9ca914500abdb2e9b0b98e8e90a5.jpg">
+            </div>
+            <div class="main-screen__carousel__box">
+                <img src="https://i.pinimg.com/1200x/c2/6e/f1/c26ef1c5be9c828db3c067a61bf41e82.jpg">
+            </div>
+        </div>
+        
+        <div class="shopping-menu">
+            <ul class="shopping-menu__list">
+                <li class="shopping-menu__btn">
+                    <img src="icons/ic32-shopping-gift.svg">
+                    <span>선물하기</span>
+                    <!--<a class="shopping-menu__link" href="#">
+                    </a>!-->
+                </li>
+                <li class="shopping-menu__btn">
+                    <img src="icons/ic32-shopping-talkdeal.svg">
+                    <span>톡딜</span>
+                    <!--<a class="shopping-menu__link" href="#">
+                    </a>!-->
+                </li>
+                <li class="shopping-menu__btn">
+                    <img src="icons/ic32-shopping-live.svg">
+                    <span>라이브쇼핑</span>
+                    <!--<a class="shopping-menu__link" href="#">
+                    </a>!-->
+                </li>
+                <li class="shopping-menu__btn">
+                    <img src="icons/ic32-shopping-mygift.svg">
+                    <span>받은선물</span>
+                    <!--<a class="shopping-menu__link" href="#">
+                    </a>!-->
+                </li>
+                <li class="shopping-menu__btn">
+                    <img src="icons/ic32-shopping-receipt.svg">
+                    <span>주문내역</span>
+                    <!--<a class="shopping-menu__link" href="#">
+                    </a>!-->
+                </li>
+            </ul>
+        </div>
+
+        <div class="product-curation">
+            <div class="product-curation__title">
+                    <h1>나를 위한 추천 딜</h1>
+            </div>
+            <div class="product-curation__container">
+                <div class="product-curation__img">
+                    <img src="https://cdn.eyesmag.com/content/uploads/sliderImages/2024/05/30/0-10835ec1-bbae-4e44-9591-ebf3a83e6cfc.jpg">
+                </div>
+                <div class="product-curation__txt">
+                    <div class="product-curation__txt__tag">
+                        <span id="tag--color" >할인쿠폰 2장</span>
+                        <span id="tag--default">무료배송</span>
+                    </div>
+                    <div class="product-curation__txt__pd-name">
+                        <h6>LG전자 스탠바이미 2</h6>
+                    </div>
+                    <div class="product-curation__txt__pd-price">
+                        <div class="product-curation__txt__pd-price__1row">
+                            <h1>톡딜가</h1> <h1>1,190,000원</h1> <p>1,290,000원</p>
+                        </div>
+                        <div class="product-curation__txt__pd-price__2row">
+                            <h2>최대혜택가 1,134,600원</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-curation__container">
+                <div class="product-curation__img">
+                    <img src="https://cdn.eyesmag.com/content/uploads/sliderImages/2024/05/30/0-10835ec1-bbae-4e44-9591-ebf3a83e6cfc.jpg">
+                </div>
+                <div class="product-curation__txt">
+                    <div class="product-curation__txt__tag">
+                        <span id="tag--color" >할인쿠폰 2장</span>
+                        <span id="tag--default">무료배송</span>
+                    </div>
+                    <div class="product-curation__txt__pd-name">
+                        <h6>LG전자 스탠바이미 2</h6>
+                    </div>
+                    <div class="product-curation__txt__pd-price">
+                        <div class="product-curation__txt__pd-price__1row">
+                            <h1>톡딜가</h1> <h1>1,190,000원</h1> <p>1,290,000원</p>
+                        </div>
+                        <div class="product-curation__txt__pd-price__2row">
+                            <h2>최대혜택가 1,134,600원</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-curation__container">
+                <div class="product-curation__img">
+                    <img src="https://cdn.eyesmag.com/content/uploads/sliderImages/2024/05/30/0-10835ec1-bbae-4e44-9591-ebf3a83e6cfc.jpg">
+                </div>
+                <div class="product-curation__txt">
+                    <div class="product-curation__txt__tag">
+                        <span id="tag--color" >할인쿠폰 2장</span>
+                        <span id="tag--default">무료배송</span>
+                    </div>
+                    <div class="product-curation__txt__pd-name">
+                        <h6>LG전자 스탠바이미 2</h6>
+                    </div>
+                    <div class="product-curation__txt__pd-price">
+                        <div class="product-curation__txt__pd-price__1row">
+                            <h1>톡딜가</h1> <h1>1,190,000원</h1> <p>1,290,000원</p>
+                        </div>
+                        <div class="product-curation__txt__pd-price__2row">
+                            <h2>최대혜택가 1,134,600원</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const chips = document.querySelectorAll(".chip-component");
+        chips.forEach((chip) => {
+            chip.addEventListener("click", () => {
+                const activeChip = document.querySelector(".chip-component--active");
+                if (activeChip) {
+                    activeChip.classList.remove("chip-component--active");
+                }
+            chip.classList.add("chip-component--active");
+            });
+        });
+    </script>
+</body>
+</html>

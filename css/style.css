@@ -1,0 +1,132 @@
+/* 리셋 */
+@import "reset.css";
+
+/* 컴포넌트 */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/alt-screen-header.css";
+
+/* 베리어블 */
+@import "variables.css";
+
+/* 스크린 */
+@import "screens/friends.css";
+@import "screens/chatting-room.css";
+@import "screens/shopping.css";
+@import "screens/more.css";
+@import "screens/chat.css";
+
+.main-screen {
+    margin: 0 20px;
+    padding-bottom: 77px;
+    padding-top: 164px;
+    margin-bottom: 32px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Pretendard", "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", sans-serif;
+}
+form{
+    margin: 0 20px;
+}
+/* 헤더 로고 섹션 */
+.login-header{
+    margin: 48px 0;
+    display: flex;
+    justify-content: center;
+}
+.login-header__logo {
+    width: 22%;
+    height: auto;
+}
+/* 인풋 섹션 */
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 350px;
+}
+#login-form input {
+    padding: 12px;
+    border: none;
+    font-size: 14px;
+    border-radius: 0%;
+    background-color: transparent;
+}
+#login-form input:not([type="submit"]) {
+    border-bottom: 1.4px solid var(--border-color);
+    transition: border-color 0.3s ease-in-out;
+}
+#login-form input::placeholder {
+    color: var(--placeholder-color);
+}
+#login-form input[type="password"] { 
+    margin-bottom: 40px; 
+}
+#login-form input:focus {
+    outline: none;
+    border-bottom: 1.4px solid var(--placeholder-color);
+}
+/* 버튼 섹션 */
+#login-form input[type="submit"] {
+  color: var(--text-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+#login-form input[type="submit"][value="로그인"] {
+  background-color: var(--primary-color);
+}
+#login-form input[type="submit"][value="QR코드 로그인"] {
+  background-color: var(--disabled-color);
+}
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;      /* p 기본 margin 덮어쓰기 */
+  color: var(--placeholder-color);
+  font-size: 12px;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--border-color);
+}
+/* 옵션 섹션 */
+.login-options {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+.login-options a {
+    color: var(--text-color);
+    font-size: 12px;
+    text-decoration: none;
+}
+.login-options__column {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.login-options__column a + a {
+  position: relative;
+  padding-left: 8px;
+}
+.login-options__column a + a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: var(--border-color);
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatting-room</title>
+</head>
+<body id="chattingroom-screen">
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>12:00</span>
+        </div>
+        <div class="status-bar__column">
+            <img src="icons/cellular.svg" alt="Cellular Icon">
+            <img src="icons/wifi.svg" alt="WiFi Icon">
+            <img src="icons/battery.svg" alt="Battery Icon">
+        </div>
+    </div>
+    
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="chat.html"><img src="icons/ic24-back.svg"></a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">마이멜로디</h1>
+        </div>
+        <div class="alt-header__column">
+            <span><img src="icons/ic24-search.svg"></span>
+            <span><img src="icons/ic24-menu.svg"></span>
+        </div>
+    </header>
+
+    <main class="chatting-room__main-screen main-chat">
+
+        <div class="main-chat__timestamp">
+            <span>2026년 3월 12일 목요일</span>
+        </div>
+
+        <div class="message-row">
+            <img src="https://i.scdn.co/image/ab67616d0000b273c8be75e311fe41c8f449f940"
+            class="user-component__avatar--xs">
+            <div class="message-row__content">
+                <span class="message__sender">마이멜로디</span>
+                <div class="message__bubble">
+                    <span class="message__text">언제나 너를 응원해! 행복한 하루 보내</span>
+                    <span class="message__time">오전 11:11</span>
+                </div>
+            </div>
+        </div>
+
+           <div class="message-row message-row--mine">
+            <div class="message-row__content">
+                <div class="message__bubble">
+                    <span class="message__text">안녕</span>
+                    <span class="message__time">오전 11:11</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="message-row">
+            <img src="https://i.scdn.co/image/ab67616d0000b273c8be75e311fe41c8f449f940"
+            class="user-component__avatar--xs">
+            <div class="message-row__content">
+                <span class="message__sender">마이멜로디</span>
+                <div class="message__bubble">
+                    <span class="message__text">마이멜로디의 보물은 할머니가 만들어준 귀여운 두건이야</span>
+                    <span class="message__time">오전 11:11</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <form class="chat-input"> 
+        <div class="chat-input__column">
+            <button class="chat-input__button"><img src="icons/ic24-plus.svg"></button>
+        </div>
+        <div class="chat-input__column">
+            <input type="text" placeholder="메세지 입력">
+            <span><img src="icons/ic24-emoji.svg"></span>
+        </div>
+        <div class="chat-input__column">
+            <button class="chat-input__button"><img src="icons/ic24-send.svg"></button>
+        </div>
+    </form>
+
+    <script>
+        // 1. 애니메이션을 적용할 모든 요소를 선택
+        const chatElements = document.querySelectorAll(".main-chat__timestamp, .message-row");
+        // 2. 각 요소마다 순차적으로 클래스와 딜레이를 부여
+        chatElements.forEach((el, index) => {
+            const delay = index * 0.3;
+            el.style.animationDelay = `${delay}s`;
+            // 애니메이션 실행을 위한 클래스 추가
+            el.classList.add("appear-animation");
+        });
+    </script>
+
+</body>
+</html>

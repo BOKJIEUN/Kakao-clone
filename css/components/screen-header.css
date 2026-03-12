@@ -1,0 +1,64 @@
+.screen-header{
+    padding: 62px 20px 16px 20px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+.screen-header__1row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.screen-header__1row__left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.screen-header__1row__left-profile {
+    width: 32px;
+    height: 32px;
+    border: 0.8px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.screen-header__1row__left-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.screen-header__1row__right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.screen-header__2row{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.chip-component{
+    background-color: white;
+    width: fit-content;
+    height: 38px;
+    box-sizing: border-box;
+    padding: 6px 12px 6px 12px;
+    border-radius: 100px;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.chip-component--icon{
+    padding: 6px;
+}
+.chip-component--active{
+    background: black;
+    color: white;
+    border: none;
+}
